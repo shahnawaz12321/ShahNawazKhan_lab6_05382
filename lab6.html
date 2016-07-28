@@ -1,0 +1,23 @@
+<html>
+<title>Lab 6 | Online Shopping Portal</title>
+<body>
+	<h1 align = "center">Online Shopping Portal</h1>
+	<div align = "center" ng-app="">
+	   <p>Enter the product you want to search for: <span class="text-muted">(Iron, Television, Xbox One)</span>
+	   <input type="text" class="form-control" ng-model="product">
+	<div ng-hide = "product != 'Iron'"id = "Iron"style="border:1px solid black; height:300px; width: 1000px; margin:100px">
+			<img align = "left"src ="iron.jpg" height = "200px" width = "200px"/>
+			<p align = "center"style="font-size:50px"> <b>Iron</b><br> Price: Rs. 2000</p>
+	</div>
+	<div ng-hide = "product != 'Television'" id = "Television"style="border:1px solid black; height:300px; width: 1000px; margin:100px">
+			<img align = "left"src ="television.jpg" height = "200px" width = "200px"/>
+			<p align = "center"style="font-size:50px"> <b>Television</b><br> Price: Rs. 50000</p>
+	</div>
+	<div ng-hide = "product != 'Xbox One'" id = "Xbox One"style="border:1px solid black; height:300px; width: 1000px; margin:100px">
+			<img align = "left"src ="xbox one.png" height = "200px" width = "300px"/>
+			<p align = "center"style="font-size:50px"> <b>Xbox One</b><br> Price: Rs. 40000</p>
+	</div>
+</div>
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+</body>
+</html>
